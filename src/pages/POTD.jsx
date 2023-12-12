@@ -6,7 +6,7 @@ import '../styles/app.css'
 import '../styles/home.css'
 
 import striversimg from '../images/strivers.webp'
-import leetcodeimg from '../images/leetcode.png'
+import leetcodeimg from '../images/leetCode.png'
 
 const POTD = () => {
   return (

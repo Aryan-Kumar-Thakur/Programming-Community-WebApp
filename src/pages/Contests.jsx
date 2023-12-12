@@ -5,7 +5,7 @@ import '../styles/contests.css'
 
 import contestslogo from '../images/contestslogo.png'
 import codechefimg from '../images/codechef.png'
-import leetcodeimg from '../images/leetcode.png'
+import leetcodeimg from '../images/leetCode.png'
 
 const Contests = () => {
   return (
