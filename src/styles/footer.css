@@ -1,0 +1,56 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 99;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: tomato;
+}
+
+footer .social-media {
+    display: flex;
+    font-size: 25px;
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.instagram {
+    color: #c32aa3;
+}
+
+.whatsapp {
+    color: #128c7e;
+}
+
+@media screen and (max-width:630px) {
+    footer{
+        flex-direction: column;
+    }
+    footer .social-media{
+        position: relative;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:350px){
+    footer h1{
+        font-size: 1.8rem;
+    }
+}
