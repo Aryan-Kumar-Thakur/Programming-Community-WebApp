@@ -17,7 +17,7 @@ const Login = () => {
         <div class="login-form">
           <form action="/api/v1/users/login" method="POST">
             <div class="input-field">
-              <h3>For Login as core member (click below : )</h3>
+              <h3 className='selectuser'>For Login as core member (click below : )</h3>
               <label for="core">
                 <input type="checkbox" id="core" name="type" onChange={(e) => { setcore(!core) }} />
               </label>

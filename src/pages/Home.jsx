@@ -11,7 +11,12 @@ import Contestsimage from '../images/contestsimg.jpeg'
 
 const Home = () => {
 
-  const Navigate = useNavigate()
+  // const Navigate = useNavigate()
+
+  const handleNavigate = () => {
+    window.location.href = '/login';
+  };
+
   return (
     <div className='page-content'>
       <div className='main-container'>
@@ -20,7 +25,7 @@ const Home = () => {
             <h1>WHO ARE WE ?</h1>
             <p>The <span className='brand'>programming community</span> of our college is a vibrant hub of aspiring developers and programmers,
              where students come together to learn, collaborate, and share their passion for coding.</p>
-             <Button variant="contained" className='btn' onClick={()=> {Navigate("/login")}}>Join Us</Button>
+             <Button variant="contained" className='btn' onClick={handleNavigate}>Join Us</Button>
           </div>
           <div className='intro-img'>
             <img src={logo} alt="demo img" />
@@ -35,7 +40,7 @@ const Home = () => {
           <Card 
             title={"Contests"}
             imgurl={Contestsimage}
-            url="/contests"
+            url="/contest"
           />
         </div>
       </div>

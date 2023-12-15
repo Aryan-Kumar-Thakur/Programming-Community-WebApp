@@ -1,14 +1,15 @@
 import React from 'react'
 import '../styles/footer.css'
-import { FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     return (
         <footer>
             <h1>Thanks for visiting us 😍</h1>
                 <ul className='social-media'>
-                    <a href="https://fontawesome.com/search?q=edit&o=r" target='_blanc'><li className='instagram'><FaInstagramSquare /></li></a>
-                    <a href="https://www.youtube.com/" target='_blanc'><li className='whatsapp'><FaWhatsappSquare /></li></a>
+                    <li><SocialIcon className='icon' url='https://www.instagram.com/itsme_aryan14/?next=%2F' target='_blank'></SocialIcon></li>
+                    <li><SocialIcon className='icon' url="https://www.linkedin.com/in/aryan-kumar-thakur/" target='_blank'></SocialIcon></li>
+                    <li><SocialIcon className='icon' url="https://github.com/Aryan-Kumar-Thakur" target='_blank'></SocialIcon></li>
                 </ul>
         </footer>
     )

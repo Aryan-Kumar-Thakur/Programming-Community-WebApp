@@ -105,5 +105,9 @@
     .input-field input {
       width: 220px;
     }
+
+    .input-field h3{
+      font-size: 1.8rem;
+    }
   }
   

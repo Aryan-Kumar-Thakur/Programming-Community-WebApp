@@ -1,9 +1,10 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom';
 
 const Card = ({ title, imgurl, url, externalurl }) => {
-  const Navigate = useNavigate()
+  const handleNavigate = () => {
+    window.location.href = `${url}`;
+  };
   return (
     <>
       <div className='card'>
@@ -15,7 +16,7 @@ const Card = ({ title, imgurl, url, externalurl }) => {
           {
             (url === "") ?
               <a href={externalurl} target='_balnc'><Button variant="contained" className='btn'>Visit Site</Button></a> :
-              <Button variant="contained" className='btn' onClick={() => { Navigate(`${url}`) }}>Visit Page</Button>
+              <Button variant="contained" className='btn' onClick={handleNavigate}>Visit Page</Button>
           }
         </div>
       </div>

@@ -9,7 +9,7 @@ export const Navitems = [
     },
     {
         title:"Contests",
-        url:'/contests',
+        url:'/contest',
     },
     {
         title:"Dashboard",

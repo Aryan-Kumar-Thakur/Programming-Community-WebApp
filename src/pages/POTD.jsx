@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card2 from '../components/Card2'
 import Card from '../components/Card'
 import '../styles/POTD.css'
@@ -9,6 +9,7 @@ import striversimg from '../images/strivers.webp'
 import leetcodeimg from '../images/leetCode.png'
 
 const POTD = () => {
+
   return (
     <div className='page-content'>
       <div className='pod'>

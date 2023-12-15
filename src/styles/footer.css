@@ -26,20 +26,17 @@ footer .social-media {
     margin-top: 20px;
 }
 
-.social-media a {
+.social-media li {
     list-style: none;
     margin-right: 20px;
 }
 
-.instagram {
-    color: #c32aa3;
+.social-media .icon{
+    width: 40px !important;
+    height: 40px !important;
 }
 
-.whatsapp {
-    color: #128c7e;
-}
-
-@media screen and (max-width:630px) {
+@media screen and (max-width:830px) {
     footer{
         flex-direction: column;
     }
@@ -52,5 +49,9 @@ footer .social-media {
 @media screen and (max-width:350px){
     footer h1{
         font-size: 1.8rem;
+    }
+    .social-media .icon{
+        width: 30px !important;
+        height: 30px !important;
     }
 }
